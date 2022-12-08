@@ -1,0 +1,322 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+<link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+<!--Bootstrap-->
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<!--Font icons-->
+<link href="css/all.css"  rel="stylesheet" type="text/css">
+<!--Carousel Slider-->
+<link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css">
+<link href="css/owl.theme.default.min.css" rel="stylesheet" type="text/css">
+<!--fonts-->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!--Theme CSS -->
+	<link rel="stylesheet" type="text/css" href="css/admin.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<!--aos-->
+<link rel="stylesheet" type="text/css" href="css/aos.css">
+</head>
+<body>
+<div class="preloader">
+  <main>
+    <svg class="lp" viewBox="0 0 128 128" width="128px" height="128px" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="grad1" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#000" />
+          <stop offset="100%" stop-color="#fff" />
+        </linearGradient>
+        <mask id="mask1">
+          <rect x="0" y="0" width="128" height="128" fill="url(#grad1)" />
+        </mask>
+      </defs>
+      <g fill="none" stroke-linecap="round" stroke-width="16">
+        <circle class="lp__ring" r="56" cx="64" cy="64" stroke="#ddd" />
+        <g stroke="#fd3f16">
+          <polyline class="lp__fall-line" points="64,8 64,120" />
+          <polyline class="lp__fall-line lp__fall-line--delay1" points="64,8 64,120" />
+          <polyline class="lp__fall-line lp__fall-line--delay2" points="64,8 64,120" />
+          <polyline class="lp__fall-line lp__fall-line--delay3" points="64,8 64,120" />
+          <polyline class="lp__fall-line lp__fall-line--delay4" points="64,8 64,120" />
+          <circle class="lp__drops" r="56" cx="64" cy="64" transform="rotate(90,64,64)" />
+          <circle class="lp__worm" r="56" cx="64" cy="64" transform="rotate(-90,64,64)" />
+        </g>
+        <g stroke="#fbaf3b" mask="url(#mask1)">
+          <polyline class="lp__fall-line" points="64,8 64,120" />
+          <polyline class="lp__fall-line lp__fall-line--delay1" points="64,8 64,120" />
+          <polyline class="lp__fall-line lp__fall-line--delay2" points="64,8 64,120" />
+          <polyline class="lp__fall-line lp__fall-line--delay3" points="64,8 64,120" />
+          <polyline class="lp__fall-line lp__fall-line--delay4" points="64,8 64,120" />
+          <circle class="lp__drops" r="56" cx="64" cy="64" transform="rotate(90,64,64)" />
+          <circle class="lp__worm" r="56" cx="64" cy="64" transform="rotate(-90,64,64)" />
+        </g>
+      </g>
+    </svg>
+  </main>
+</div>
+<div class="wrapper position-relative">
+	
+	<div class="sidebar-overlay"></div>
+	
+  <div id="sidebar">
+    <div class="sidebar-cont">
+      <div class="side-logo text-center"> <a href="#"><img src="images/side-logo.png" class="img-fluid"></a> </div>
+      <ul class="list-unstyled sidebar-link">
+        <li><a href="#"><i class="fa-solid fa-table-columns"></i> Dashboard</a></li>
+        <li><a href="#"><i class="fa-solid fa-money-bill-transfer"></i> Deposit</a></li>
+        <li><a href="#"><i class="fa-solid fa-wallet"></i> Withdraw</a></li>
+        <li class="side-drop">
+          <div class="dropdown"> <a class="dropdown-toggle position-relative" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-clock-rotate-left"></i> History </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#"><i class="fa-solid fa-table-list"></i> Deposit List</a></li>
+        <li><a href="#"><i class="fa-solid fa-file"></i> Referral</a></li>
+        <li><a href="#"><i class="fa-solid fa-link"></i> Referral Links</a></li>
+        <li><a href="#"><i class="fa-solid fa-hand-holding-dollar"></i> Add Funds</a></li>
+        <li><a href="#"><i class="fa-solid fa-shield-halved"></i> Security</a></li>
+        <li><a href="#"><i class="fa-solid fa-pen-to-square"></i> Edit Account</a></li>
+        <li><a href="#"><i class="fa-solid fa-money-bills"></i> Paidout</a></li>
+        <li class="side-drop">
+          <div class="dropdown"> <a class="dropdown-toggle position-relative" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-square-up-right"></i> Other Links </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <div class="queries text-center">
+        <h5 class="text-primary mb-3">If you have any queries</h5>
+        <a href="#" class="btn btn-primary">Contact</a> </div>
+    </div>
+  </div>
+	
+	
+	
+  <div class="admin-cont">
+	  <div class="admin-inner-cont">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="admin-top d-lg-flex justify-content-between align-items-center text-lg-start text-center position-relative">
+			  <div class="bars d-lg-none">
+		<a type="button" class="btn btn-primary text-white" id="sidebar-toggle">
+			<i class="fa fa-bars"></i>
+		</a>
+	</div>
+            <h4 class="text-white mort mb-lg-0">Dashboard</h4>
+            <a href="#" class="btn btn-primary">logout</a> </div>
+        </div>
+      </div>
+		
+		<div class="row align-items-center">
+		<div class="col-lg-6">
+			
+			<div class="admin-user">
+			<h5 class="text-white fw-bold">Welcome</h5>
+				<p class="mb-lg-0"><span class="fw-bold text-primary text-uppercase">user</span> to your Dashboard</p>
+			</div>
+			
+			</div>
+			
+			<div class="col-lg-6">
+			<div class="form-block mb-3 mb-lg-0 position-relative">
+              <div class="form-ico text-white copy-ico"> <i class="fa-solid fa-copy"></i> </div>
+              <input type="text" class="form-control link" placeholder="Referral Links..." value="Referral Links...">
+              
+            </div>
+			</div>
+			
+		</div>
+		
+		<div class="row">
+		<div class="col-xl-10 offset-xl-1">
+			
+			<ul class="list-unstyled dash-stat-carousel owl-carousel mb-0">
+			<li>
+				<div class="stat-block position-relative">
+          <div class="stai-ico text-center"> <img src="images/sta1.png" class="img-fluid"> </div>
+          <div class="stat-cont">
+            <h4 class="text-white fw-bold">$45,563,258</h4>
+            <span class="text-white">Total Deposit</span> </div>
+        </div>
+				</li>
+				<li>
+				<div class="stat-block position-relative">
+          <div class="stai-ico text-center"> <img src="images/sta2.png" class="img-fluid"> </div>
+          <div class="stat-cont">
+            <h4 class="text-white fw-bold">$45,563,258</h4>
+            <span class="text-white">Total Withdrawal</span> </div>
+        </div>
+				</li>
+				<li>
+				<div class="stat-block position-relative">
+          <div class="stai-ico text-center"> <img src="images/sta3.png" class="img-fluid"> </div>
+          <div class="stat-cont">
+            <h4 class="text-white fw-bold">Nov 01, 2022</h4>
+            <span class="text-white">Project Started</span> </div>
+        </div>
+				
+				</li>
+				<li>
+				<div class="stat-block position-relative">
+          <div class="stai-ico text-center"> <img src="images/sta4.png" class="img-fluid"> </div>
+          <div class="stat-cont">
+            <h4 class="text-white fw-bold">8564</h4>
+            <span class="text-white">Running Days</span> </div>
+        </div>
+				</li>
+				<li><div class="stat-block position-relative">
+          <div class="stai-ico text-center"> <img src="images/sta5.png" class="img-fluid"> </div>
+          <div class="stat-cont">
+            <h4 class="text-white fw-bold">689</h4>
+            <span class="text-white">Total Accounts</span> </div>
+        </div></li>
+				<li>
+				<div class="stat-block position-relative">
+          <div class="stai-ico text-center"> <img src="images/sta6.png" class="img-fluid"> </div>
+          <div class="stat-cont">
+            <h4 class="text-white fw-bold">03</h4>
+            <span class="text-white">Visitors Online</span> </div>
+        </div>
+				</li>
+				<li><div class="stat-block position-relative">
+          <div class="stai-ico text-center"> <img src="images/sta7.png" class="img-fluid"> </div>
+          <div class="stat-cont">
+            <h4 class="text-white fw-bold">98</h4>
+            <span class="text-white">Members Online</span> </div>
+        </div></li>
+				<li>
+				<div class="stat-block position-relative">
+          <div class="stai-ico text-center"> <img src="images/sta8.png" class="img-fluid"> </div>
+          <div class="stat-cont">
+            <h4 class="text-white fw-bold">$45,563,258</h4>
+            <span class="text-white">Last Deposit</span> </div>
+        </div>
+				</li>
+			</ul>
+			
+			</div>
+		</div>
+		
+		<div class="row">
+		<div class="col-lg-12">
+			
+			<div class="title admin-title text-center">
+          <h5 class="text-white mort">balance</h5>
+          <h2 class="mort mask2 mt-3">account balance</h2>
+        </div>
+			
+			</div>
+			
+			
+			<div class="col-lg-6">
+			<div class="account-block d-flex justify-content-between align-items-center">
+				
+				<div class="account-cont">
+				<h4 class="text-white mort">main balance</h4>
+					<h2 class="text-primary fw-bold">$12232341.00<small class="text-white">USD</small></h2>
+					<span class="text-white text-uppercase fw-bold">Last deposit : 4/11/22</span>
+				</div>
+				
+				<div class="account-img bg-black text-center">
+				<img src="images/account1.png" class="img-fluid"/>
+				</div>
+				
+				</div>
+			</div>
+			<div class="col-lg-6">
+			<div class="account-block d-flex justify-content-between align-items-center">
+				
+				<div class="account-cont">
+				<h4 class="text-white mort">withdraw</h4>
+					<h2 class="text-primary fw-bold">$12232341.00<small class="text-white">USD</small></h2>
+					<span class="text-white text-uppercase fw-bold">Last Withdraw : 4/11/22</span>
+				</div>
+				
+				<div class="account-img bg-black text-center">
+				<img src="images/account2.png" class="img-fluid"/>
+				</div>
+				
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="row">
+		<div class="col-lg-12">
+			
+			<div class="title admin-title text-center">
+          <h5 class="text-white mort">Notes</h5>
+          <h2 class="mort mask2 mt-3">account Notes</h2>
+        </div>
+			
+			</div>
+			
+			
+			<div class="col-lg-6">
+			
+			<div class="notes-bg text-white text-center">
+				Accout Balance of Paypal Method is $4536.00</div>
+			
+			</div>
+			
+			<div class="col-lg-6">
+			
+			<div class="notes-bg text-white text-center">
+				Accout Balance of Bitcoin Method is $4536.00</div>
+			
+			</div>
+			
+			<div class="col-lg-6">
+			
+			<div class="notes-bg text-white text-center">
+				Accout Balance of Dash Method is $4536.00</div>
+			
+			</div>
+			
+			<div class="col-lg-6">
+			
+			<div class="notes-bg text-white text-center">
+				Accout Balance of Payeer Method is $4536.00</div>
+			
+			</div>
+			
+		</div>
+		
+		
+		
+    </div>
+		  
+		  
+		  <footer>
+		  <div class="container-fluid">
+			  <div class="row">
+      <div class="col-lg-12">
+        <h6 class="copy text-white py-4 text-center">Copyright © 2022 <a href="#">SPACE HYIP</a>. All rights reserved.</h6>
+      </div>
+    </div>
+			  </div>
+		  </footer>
+		  </div>
+  </div>
+</div>
+<script src="js/jquery-3.6.0.min.js"></script> 
+<script src="js/bootstrap.bundle.js"></script> 
+<script src="js/script.js"></script> 
+<script src="js/owl.carousel.min.js"></script> 
+<script src="js/aos.js"></script>
+</body>
+</html>

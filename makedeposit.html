@@ -1,0 +1,261 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Make deposit</title>
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+<link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+<!--Bootstrap-->
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<!--Font icons-->
+<link href="css/all.css"  rel="stylesheet" type="text/css">
+<!--Carousel Slider-->
+<link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css">
+<link href="css/owl.theme.default.min.css" rel="stylesheet" type="text/css">
+<!--fonts-->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!--Theme CSS -->
+<link rel="stylesheet" type="text/css" href="css/admin.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<!--aos-->
+<link rel="stylesheet" type="text/css" href="css/aos.css">
+</head>
+<body>
+<div class="preloader" style="display: none;">
+  <main>
+    <svg class="lp" viewBox="0 0 128 128" width="128px" height="128px" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="grad1" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#000"></stop>
+          <stop offset="100%" stop-color="#fff"></stop>
+        </linearGradient>
+        <mask id="mask1">
+          <rect x="0" y="0" width="128" height="128" fill="url(#grad1)"></rect>
+        </mask>
+      </defs>
+      <g fill="none" stroke-linecap="round" stroke-width="16">
+        <circle class="lp__ring" r="56" cx="64" cy="64" stroke="#ddd"></circle>
+        <g stroke="#fd3f16">
+          <polyline class="lp__fall-line" points="64,8 64,120"></polyline>
+          <polyline class="lp__fall-line lp__fall-line--delay1" points="64,8 64,120"></polyline>
+          <polyline class="lp__fall-line lp__fall-line--delay2" points="64,8 64,120"></polyline>
+          <polyline class="lp__fall-line lp__fall-line--delay3" points="64,8 64,120"></polyline>
+          <polyline class="lp__fall-line lp__fall-line--delay4" points="64,8 64,120"></polyline>
+          <circle class="lp__drops" r="56" cx="64" cy="64" transform="rotate(90,64,64)"></circle>
+          <circle class="lp__worm" r="56" cx="64" cy="64" transform="rotate(-90,64,64)"></circle>
+        </g>
+        <g stroke="#fbaf3b" mask="url(#mask1)">
+          <polyline class="lp__fall-line" points="64,8 64,120"></polyline>
+          <polyline class="lp__fall-line lp__fall-line--delay1" points="64,8 64,120"></polyline>
+          <polyline class="lp__fall-line lp__fall-line--delay2" points="64,8 64,120"></polyline>
+          <polyline class="lp__fall-line lp__fall-line--delay3" points="64,8 64,120"></polyline>
+          <polyline class="lp__fall-line lp__fall-line--delay4" points="64,8 64,120"></polyline>
+          <circle class="lp__drops" r="56" cx="64" cy="64" transform="rotate(90,64,64)"></circle>
+          <circle class="lp__worm" r="56" cx="64" cy="64" transform="rotate(-90,64,64)"></circle>
+        </g>
+      </g>
+    </svg>
+  </main>
+</div>
+<div class="wrapper position-relative">
+  <div class="sidebar-overlay"></div>
+  <div id="sidebar">
+    <div class="sidebar-cont">
+      <div class="side-logo text-center"> <a href="#"><img src="images/side-logo.png" class="img-fluid"></a> </div>
+      <ul class="list-unstyled sidebar-link">
+        <li><a href="#"><i class="fa-solid fa-table-columns"></i> Dashboard</a></li>
+        <li><a href="#"><i class="fa-solid fa-money-bill-transfer"></i> Deposit</a></li>
+        <li><a href="#"><i class="fa-solid fa-wallet"></i> Withdraw</a></li>
+        <li class="side-drop">
+          <div class="dropdown"> <a class="dropdown-toggle position-relative" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-clock-rotate-left"></i> History </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#"><i class="fa-solid fa-table-list"></i> Deposit List</a></li>
+        <li><a href="#"><i class="fa-solid fa-file"></i> Referral</a></li>
+        <li><a href="#"><i class="fa-solid fa-link"></i> Referral Links</a></li>
+        <li><a href="#"><i class="fa-solid fa-hand-holding-dollar"></i> Add Funds</a></li>
+        <li><a href="#"><i class="fa-solid fa-shield-halved"></i> Security</a></li>
+        <li><a href="#"><i class="fa-solid fa-pen-to-square"></i> Edit Account</a></li>
+        <li><a href="#"><i class="fa-solid fa-money-bills"></i> Paidout</a></li>
+        <li class="side-drop">
+          <div class="dropdown"> <a class="dropdown-toggle position-relative" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-square-up-right"></i> Other Links </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <div class="queries text-center">
+        <h5 class="text-primary mb-3">If you have any queries</h5>
+        <a href="#" class="btn btn-primary">Contact</a> </div>
+    </div>
+  </div>
+  <div class="admin-cont">
+    <div class="admin-inner-cont">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="admin-top d-lg-flex justify-content-between align-items-center text-lg-start text-center position-relative pb-0">
+              <div class="bars d-lg-none"> <a type="button" class="btn btn-primary text-white" id="sidebar-toggle"> <i class="fa fa-bars"></i> </a> </div>
+              <h4 class="text-white mort mb-lg-0">make deposit</h4>
+              <a href="#" class="btn btn-primary">logout</a> </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="title admin-title text-center">
+              <h5 class="text-white mort">plan</h5>
+              <h2 class="mort mask2 mt-3">investment plan</h2>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <ul class="list-unstyled plan-carousel owl-carousel mt-lg-4 mb-lg-4" >
+              <li>
+                <div class="plan-after position-relative">
+                  <div class="plan position-relative z-in1 text-center">
+                    <h6 class="text-white fw-medium text-uppercase">plan</h6>
+                    <h1 class="fw-bold text-primary"><span>20</span><small class="text-white ms-1">%</small></h1>
+                    <h4 class="text-white mort">Basic</h4>
+                    <ul class="list-unstyled text-white mt-4">
+                      <li>Daily Income</li>
+                      <li>Min - Max Deposit
+                        <h4 class="text-primary fw-bold mb-0 mt-2">$ 100 - 1000</h4>
+                      </li>
+                      <li>Principal Included</li>
+                      <li>Profit <b>After 2 Days</b></li>
+                    </ul>
+                    <a href="#" class="btn btn-primary position-relative">invest now</a> </div>
+                </div>
+              </li>
+              <li>
+                <div class="plan-after position-relative">
+                  <div class="plan position-relative z-in1 text-center">
+                    <h6 class="text-white fw-medium text-uppercase">plan</h6>
+                    <h1 class="fw-bold text-primary"><span>20</span><small class="text-white ms-1">%</small></h1>
+                    <h4 class="text-white mort">standard</h4>
+                    <ul class="list-unstyled text-white mt-4">
+                      <li>Daily Income</li>
+                      <li>Min - Max Deposit
+                        <h4 class="text-primary fw-bold mb-0 mt-2">$ 100 - 1000</h4>
+                      </li>
+                      <li>Principal Included</li>
+                      <li>Profit <b>After 2 Days</b></li>
+                    </ul>
+                    <a href="#" class="btn btn-primary position-relative">invest now</a> </div>
+                </div>
+              </li>
+              <li>
+                <div class="plan-after position-relative">
+                  <div class="plan position-relative z-in1 text-center">
+                    <h6 class="text-white fw-medium text-uppercase">plan</h6>
+                    <h1 class="fw-bold text-primary"><span>20</span><small class="text-white ms-1">%</small></h1>
+                    <h4 class="text-white mort">premium</h4>
+                    <ul class="list-unstyled text-white mt-4">
+                      <li>Daily Income</li>
+                      <li>Min - Max Deposit
+                        <h4 class="text-primary fw-bold mb-0 mt-2">$ 100 - 1000</h4>
+                      </li>
+                      <li>Principal Included</li>
+                      <li>Profit <b>After 2 Days</b></li>
+                    </ul>
+                    <a href="#" class="btn btn-primary position-relative">invest now</a> </div>
+                </div>
+              </li>
+              <li>
+                <div class="plan-after position-relative">
+                  <div class="plan position-relative z-in1 text-center">
+                    <h6 class="text-white fw-medium text-uppercase">plan</h6>
+                    <h1 class="fw-bold text-primary"><span>20</span><small class="text-white ms-1">%</small></h1>
+                    <h4 class="text-white mort">vip</h4>
+                    <ul class="list-unstyled text-white mt-4">
+                      <li>Daily Income</li>
+                      <li>Min - Max Deposit
+                        <h4 class="text-primary fw-bold mb-0 mt-2">$ 100 - 1000</h4>
+                      </li>
+                      <li>Principal Included</li>
+                      <li>Profit <b>After 2 Days</b></li>
+                    </ul>
+                    <a href="#" class="btn btn-primary position-relative">invest now</a> </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row pt-5">
+          <div class="col-lg-10 offset-lg-1">
+            <div class="row align-items-center">
+              <div class="col-lg-5">
+                <div class="deposit-balance text-lg-start text-center">
+                  <h4 class="text-white mort">Account Balance</h4>
+                  <h5 class="text-primary fw-bold mb-lg-0 mb-3">$12345334.00<small class="text-white">USD</small></h5>
+                </div>
+              </div>
+              <div class="col-lg-7">
+                <div class="form-floating mb-lg-0">
+                  <div class="form-ico"> <i class="fa-solid fa-dollar-sign"></i> </div>
+                  <input type="text" class="form-control" id="floatingInput" placeholder="Enter Amount to Spend">
+                  <label for="floatingInput">Enter Amount to Spend</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <ul class="choosemoney list-unstyled text-center text-lg-start py-lg-4 py-3 mb-0">
+              <li>
+                <input type="radio" id="bitcoin" name="spend" value="bitcoin">
+                <label for="bitcoin" class="text-white">Spend money from Bitcoin</label>
+              </li>
+              <li>
+                <input type="radio" id="litecoin" name="spend" value="litecoin">
+                <label for="litecoin" class="text-white">Spend money from Litecoin</label>
+              </li>
+              <li>
+                <input type="radio" id="ethereum" name="spend" value="ethereum">
+                <label for="ethereum" class="text-white">Spend money from Ethereum</label>
+              </li>
+              <li>
+                <input type="radio" id="dogecoin" name="spend" value="dogecoin">
+                <label for="dogecoin" class="text-white">Spend money from Dogecoin</label>
+              </li>
+              <li>
+                <input type="radio" id="dashcoin" name="spend" value="dashcoin">
+                <label for="dashcoin" class="text-white">Spend money from Dashcoin</label>
+              </li>
+              <li>
+                <input type="radio" id="tron" name="spend" value="tron">
+                <label for="tron" class="text-white">Spend money from Tron</label>
+              </li>
+            </ul>
+            <div class="make-btn text-center mb-lg-4"> <a href="#" class="btn btn-primary">deposit money</a> </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+              <h6 class="copy text-white py-4 text-center">Copyright © 2022 <a href="#">SPACE HYIP</a>. All rights reserved.</h6>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</div>
+<script src="js/jquery-3.6.0.min.js"></script> 
+<script src="js/bootstrap.bundle.js"></script> 
+<script src="js/script.js"></script> 
+<script src="js/owl.carousel.min.js"></script> 
+<script src="js/aos.js"></script>
+</body>
+</html>
